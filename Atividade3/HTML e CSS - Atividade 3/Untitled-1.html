@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pesquisa sobre Arquitetura de Software — Evandro Rodrigues</title>
+  <meta name="description" content="Resumo: conceitos, padrões, critérios de escolha e tendências em arquitetura de software." />
+</head>
+    <link rel="stylesheet" href="./styles/style.css" />
+
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>Arquitetura de Software</h1>
+      <p class="lead">Evandro Rodrigues de Arruda </p>
+      <p class="lead"> Resumo sobre semântico dos conceitos, padrões, escolha de arquitetura e tendências </p>
+
+    </header>
+
+    <nav aria-label="Sumário">
+      <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#conceitos">Conceitos</a></li>
+        <li><a href="#padroes">Padrões de Arquitetura</a></li>
+        <li><a href="#escolha">Escolha de Arquitetura</a></li>
+        <li><a href="#tendencias">Tendências</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+        <li><a href="#referencias">Referências</a></li>
+      </ul>
+    </nav>
+
+    <article aria-labelledby="introducao">
+      <section id="introducao">
+        <h2>Introdução</h2>
+        <p>
+          A arquitetura de software é a base estrutural de qualquer sistema, definindo como seus componentes interagem,
+          como os dados circulam e como o sistema pode ser escalado, mantido e evoluído. Mais do que organizar módulos,
+          a arquitetura impacta diretamente qualidade, segurança, desempenho e o ciclo de vida do software.
+        </p>
+      </section>
+
+      <section id="conceitos" aria-labelledby="conceitos-heading">
+        <h2 id="conceitos-heading">Conceitos</h2>
+        <p>Principais conceitos para orientar decisões arquiteturais:</p>
+        <ul>
+          <li><strong>Camadas e módulos:</strong> organização lógica para separar responsabilidades (ex.: apresentação, negócio, dados).</li>
+          <li><strong>Acoplamento e coesão:</strong> buscar baixo acoplamento e alta coesão entre componentes.</li>
+          <li><strong>Escalabilidade e desempenho:</strong> capacidade de atender a maior número de usuários e volume de dados.</li>
+          <li><strong>Manutenibilidade:</strong> facilidade em atualizar, corrigir e evoluir o sistema ao longo do tempo.</li>
+        </ul>
+      </section>
+
+      <section id="padroes" aria-labelledby="padroes-heading">
+        <h2 id="padroes-heading">Padrões de Arquitetura</h2>
+        <p>Alguns padrões amplamente utilizados:</p>
+        <ul>
+          <li><strong>Arquitetura em Camadas (Layered):</strong> separação por camadas (ex.: apresentação, negócio, persistência).</li>
+          <li><strong>MVC (Model-View-Controller):</strong> separação entre modelo, visão e controlador para modularidade da UI e lógica.</li>
+          <li><strong>Microsserviços:</strong> sistema dividido em serviços pequenos, independentes e implantáveis separadamente.</li>
+          <li><strong>Event-Driven:</strong> comunicação baseada em eventos e filas, adequada a sistemas distribuídos e assíncronos.</li>
+          <li><strong>SOA (Arquitetura Orientada a Serviços):</strong> serviços que interagem via protocolos padronizados.</li>
+        </ul>
+      </section>
+
+      <section id="escolha" aria-labelledby="escolha-heading">
+        <h2 id="escolha-heading">Escolha de Arquitetura</h2>
+        <p>A decisão sobre qual arquitetura adotar deve considerar:</p>
+        <ul>
+          <li><strong>Requisitos funcionais e não funcionais:</strong> segurança, desempenho, disponibilidade, etc.</li>
+          <li><strong>Escopo e complexidade:</strong> soluções simples podem não precisar de microsserviços; sistemas grandes podem se beneficiar deles.</li>
+          <li><strong>Equipe e recursos:</strong> capacidade da equipe em operar e manter a arquitetura escolhida.</li>
+          <li><strong>Custo e prazo:</strong> trade-offs entre rapidez de entrega e robustez arquitetural.</li>
+          <li><strong>Cenário de implantação:</strong> nuvem, on-premises ou híbrido influenciam decisões (containerização, orquestração).</li>
+        </ul>
+        <p>Um processo de avaliação criterioso, usando trade-offs, é essencial para alinhar a arquitetura às necessidades do negócio.</p>
+      </section>
+
+      <section id="tendencias" aria-labelledby="tendencias-heading">
+        <h2 id="tendencias-heading">Tendências em Arquitetura de Software</h2>
+        <p>Principais tendências atuais observadas:</p>
+        <ul>
+          <li>Microsserviços e containers (Docker, Kubernetes).</li>
+          <li>Serverless e Function as a Service (FaaS).</li>
+          <li>Arquiteturas orientadas a eventos para sistemas distribuídos.</li>
+          <li>Edge Computing para aplicações IoT com latência reduzida.</li>
+          <li>Arquitetura orientada a APIs para integração entre plataformas.</li>
+          <li>Uso de inteligência artificial e automação para suportar decisões arquiteturais.</li>
+        </ul>
+      </section>
+
+      <section id="conclusao" aria-labelledby="conclusao-heading">
+        <h2 id="conclusao-heading">Conclusão</h2>
+        <p>
+          A arquitetura de software é um pilar fundamental para o sucesso de aplicações. Dominar conceitos, padrões e tendências
+          permite ao arquiteto tomar decisões mais assertivas, equilibrando requisitos técnicos e necessidades do negócio,
+          garantindo qualidade, segurança, manutenção e escalabilidade.
+        </p>
+      </section>
+
+      <section id="referencias" aria-labelledby="referencias-heading">
+        <h2 id="referencias-heading">Referências Bibliográficas</h2>
+        <ol>
+          <li>Bass, L.; Clements, P.; Kazman, R. <em>Software Architecture in Practice</em>. Addison-Wesley, 2013.</li>
+          <li>Fowler, M. <em>Patterns of Enterprise Application Architecture</em>. Addison-Wesley, 2002.</li>
+          <li>Richards, M.; Ford, N. <em>Fundamentals of Software Architecture</em>. O'Reilly, 2020.</li>
+          <li>Microsoft. Guia de Arquitetura de Software. Disponível em: <em>learn.microsoft.com/pt-br/azure/architecture/guide/</em>. Acesso em: 08 set. 2025.</li>
+        </ol>
+      </section>
+    </article>
+
+    <footer>
+      <p>Gerado com base na pesquisa fornecida por Evandro Rodrigues. — <span class="meta">:contentReference[oaicite:1]{index=1}</span></p>
+    </footer>
+  </div>
+</body>
+</html>
