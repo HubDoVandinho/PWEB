@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arquitetura de Software — Evandro Rodrigues</title>
+  <meta name="description"
+    content="Resumo: conceitos, padrões, critérios de escolha e tendências em arquitetura de software.">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-menu" aria-label="Sumário">
+      <a href="#introducao">Introdução</a>
+      <a href="#conceitos">Conceitos</a>
+      <a href="#padroes">Padrões</a>
+      <a href="#escolha">Escolha</a>
+      <a href="#tendencias">Tendências</a>
+      <a href="#conclusao">Conclusão</a>
+      <a href="#referencias">Referências</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="content-container">
+    <div class="enquadro-h1">
+    <section>
+      <h1 style="font-size: 50px;">Arquitetura de Software</h1>
+    </section>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="enquadro">
+    <section id="introducao">
+      <h2>Introdução</h2>
+    </section>
+    <p>
+      A arquitetura de software constitui a espinha dorsal de qualquer sistema de informação, funcionando como a base
+      estrutural que organiza os componentes, regula o fluxo de dados e define padrões de comunicação e interação. Ela
+      não se limita à disposição física ou lógica do código, mas representa decisões estratégicas que impactam
+      diretamente a escalabilidade, a manutenção e a evolução de um sistema ao longo do tempo. Sistemas sem uma
+      arquitetura bem planejada tendem a se tornar difíceis de evoluir, apresentar maior incidência de falhas e gerar
+      custos elevados de manutenção. Por outro lado, uma arquitetura sólida fornece previsibilidade, clareza e
+      modularidade, permitindo que novas funcionalidades sejam adicionadas sem comprometer a integridade do sistema
+      existente. Grandes empresas de tecnologia, como Amazon e Netflix, são exemplos de organizações que investem
+      pesadamente em arquitetura para suportar sistemas complexos e de alta demanda, mostrando que a arquitetura não é
+      apenas técnica, mas também estratégica.
+    </p>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <img src="images/introducao.jpg" alt="Introdução" class="section-img">
+
+    <br>
+    <br>
+    <br>
+    <div class="enquadro">
+    <section id="conceitos">
+      <h2>Conceitos</h2>
+    </section>  
+      <p>
+        O entendimento dos conceitos fundamentais da arquitetura de software é essencial para orientar decisões de
+        projeto. Um dos princípios centrais é a separação de responsabilidades, geralmente implementada por meio de
+        camadas ou módulos. Cada módulo deve ter uma função bem definida, evitando que alterações em uma parte do
+        sistema
+        provoquem efeitos colaterais inesperados em outras partes. O acoplamento e a coesão são métricas críticas de
+        qualidade arquitetural: sistemas com baixo acoplamento apresentam menos dependências entre módulos, tornando
+        mais
+        fácil substituir, atualizar ou testar partes isoladas, enquanto a alta coesão garante que cada módulo execute
+        atividades relacionadas de forma concentrada. Além disso, a escalabilidade permite que sistemas suportem volumes
+        crescentes de usuários e dados sem perda de desempenho, e a manutenibilidade assegura que alterações sejam
+        realizadas de forma segura e eficiente, mantendo a integridade do software.
+      </p>
+    </div>
+      <br>
+      <br>
+      <br>
+      <img src="images/conceitos.jpg" alt="Conceitos" class="section-img">
+    
+    <br>
+    <br>
+    <br>
+
+    <div class="enquadro">
+    <section id="padroes">
+      <h2>Padrões de Arquitetura</h2>
+    </section>  
+      <p>
+        O uso de padrões arquiteturais fornece soluções consagradas para problemas recorrentes em sistemas
+        complexos.<br>
+
+        <br>A arquitetura em camadas organiza o sistema em níveis distintos, como apresentação, lógica de negócio e
+        persistência de dados, facilitando manutenção, testes e evolução.<br>
+
+        <br>O padrão MVC amplia essa separação, dividindo o sistema em modelo (dados e regras de negócio), visão
+        (interface com o usuário)
+        e controlador (gestão do fluxo), permitindo desenvolvimento ágil e modular.<Br>
+
+        <br>Microsserviços fragmentam o sistema em serviços independentes, cada um responsável por uma funcionalidade
+        específica,
+        aumentando a escalabilidade e a resiliência, como no caso da
+        Netflix.<br>
+
+        <br>SOA orienta a integração de sistemas heterogêneos via serviços padronizados, útil em empresas de
+        telecomunicações para integrar sistemas legados sem grandes reescritas.<br>
+
+        <br>Arquiteturas orientadas a eventos criam sistemas reativos que respondem a notificações em tempo real,
+        muito úteis em e-commerce e monitoramento financeiro.<br>
+
+        <br>Cada padrão apresenta vantagens e limitações, sendo a escolha dependente da necessidade do projeto e
+        da complexidade do sistema.
+      </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <img src="images/padroes.jpg" alt="Padrões" class="section-img">
+    
+    <br>
+    <br>
+    <br>
+    <div class="enquadro">
+    <section id="escolha">
+      <h2>Escolha de Arquitetura</h2>
+    </section>  
+      <p>
+        Decidir qual arquitetura adotar envolve equilibrar requisitos técnicos e de negócio. É necessário avaliar
+        fatores
+        como complexidade do sistema, perfil da equipe, prazo e orçamento, além do ambiente de implantação. Uma startup
+        que deseja lançar rapidamente um produto pode optar por uma arquitetura monolítica inicialmente, migrando para
+        microsserviços à medida que o sistema cresce. Sistemas de grande porte e alta disponibilidade, como plataformas
+        financeiras, exigem arquiteturas distribuídas desde o início para garantir escalabilidade e resiliência. Além
+        disso, é essencial considerar aspectos não funcionais como segurança, confiabilidade e desempenho. Uma decisão
+        inadequada pode gerar custos elevados, retrabalho e dificuldades para atender novas demandas, reforçando que a
+        arquitetura é um fator crítico de sucesso estratégico.
+      </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <img src="images/escolha.jpg" alt="Escolha de Arquitetura" class="section-img">
+    
+    <br>
+    <br>
+    <br>
+    <div class="enquadro">
+    <section id="tendencias">
+      <h2>Tendências</h2>
+    </section>  
+      <p>
+        O campo da arquitetura de software evolui constantemente, refletindo mudanças na tecnologia e nas demandas de
+        negócio. Microsserviços e containers, como Docker e Kubernetes, permitem implantações ágeis e isoladas,
+        aumentando a resiliência do sistema. Serverless e Function-as-a-Service (FaaS) eliminam a necessidade de
+        gerenciar
+        infraestrutura, permitindo que a equipe foque na lógica de negócio. Arquiteturas orientadas a eventos e Edge
+        Computing se destacam em sistemas que exigem processamento próximo à origem dos dados, como IoT e monitoramento
+        de
+        tráfego em tempo real. Integração via APIs padronizadas facilita comunicação entre sistemas heterogêneos,
+        enquanto
+        a inteligência artificial pode apoiar decisões arquiteturais, otimizando desempenho, balanceando carga e
+        prevendo
+        crescimento. Essas tendências tornam os sistemas mais adaptáveis, inteligentes e preparados para o futuro.
+      </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <img src="images/tendencias.jpg" alt="Tendências" class="section-img">
+    
+    <br>
+    <br>
+    <br>
+    <div class="enquadro">
+    <section id="conclusao">
+      <h2>Conclusão</h2>
+    </section>  
+      <p>
+        A arquitetura de software é um elemento estratégico que determina a qualidade, a sustentabilidade e a
+        longevidade
+        de qualquer sistema digital. O domínio profundo de conceitos como acoplamento, coesão, escalabilidade e
+        manutenibilidade, aliado ao uso de padrões consagrados e à observação de tendências emergentes, permite criar
+        sistemas robustos, adaptáveis e eficientes. Um projeto arquitetural bem fundamentado garante que o software seja
+        capaz de evoluir com o tempo, absorver novas tecnologias, atender às demandas de negócio e oferecer experiências
+        consistentes e confiáveis aos usuários. Investir em uma arquitetura sólida é, portanto, uma decisão essencial
+        para
+        o sucesso de qualquer iniciativa tecnológica.
+      </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <img src="images/conclusao.jpg" alt="Conclusão" class="section-img">
+    
+    <br>
+    <br>
+    <br>
+    <div class="enquadro">
+    <section id="referencias">
+      <h2>Referências</h2>
+    </section>  
+      <ol>
+        <li>Bass, L.; Clements, P.; Kazman, R. <em>Software Architecture in Practice</em>. 3ª ed. Addison-Wesley, 2013.
+        </li>
+        <li>Fowler, M. <em>Patterns of Enterprise Application Architecture</em>. Addison-Wesley, 2002.</li>
+        <li>Richards, M.; Ford, N. <em>Fundamentals of Software Architecture</em>. O'Reilly Media, 2020.</li>
+        <li>Garlan, D.; Shaw, M. <em>An Introduction to Software Architecture</em>. Carnegie Mellon University, 1994.
+        </li>
+        <li>Hohpe, G.; Woolf, B. <em>Enterprise Integration Patterns: Designing, Building, and Deploying Messaging
+            Solutions</em>. Addison-Wesley, 2003.</li>
+        <li>Microsoft. <em>Guia de Arquitetura de Software</em>. Disponível em: <a
+            href="https://learn.microsoft.com/pt-br/azure/architecture/">learn.microsoft.com</a>. Acesso em: set. 2025.
+        </li>
+        <li>Red Hat. <em>Modern Application Architecture for Enterprises</em>. Disponível em: <a
+            href="https://www.redhat.com/en/topics/cloud-native-apps/what-is-application-architecture">redhat.com</a>.
+          Acesso em: set. 2025.</li>
+        <li>IEEE. <em>Recommended Practice for Architectural Description of Software-Intensive Systems (IEEE
+            1471-2000)</em>. Institute of Electrical and Electronics Engineers, 2000.</li>
+      </ol>
+
+      </div>
+    
+  </main>
+  <br>
+  <br>
+  <br>
+  <section id="sobre">
+    <div class="sobre-container">
+      <div class="sobre-card autor-info">
+        <img src="images/vandinho.jpg" alt="Foto do autor" class="autor-img">
+        <h3>Evandro Rodrigues de Arruda</h3>
+        <p>RA: 0030482411017</p>
+      </div>
+      <div class="sobre-card autor-logos">
+        <div class="social-links">
+          <a href="https://instagram.com/instadovandinho" target="_blank">
+            <img src="images/insta.png" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/evandro-rodrigues-de-arruda-2541482b7/" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/HubDoVandinho" target="_blank">
+            <img src="images/github.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button onclick="topFunction()" id="topBtn">⬆ Topo</button>
+
+  <script>
+    const topBtn = document.getElementById("topBtn");
+    const sobreSection = document.getElementById("sobre");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      const sobreRect = sobreSection.getBoundingClientRect();
+
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+
+      if (sobreRect.top <= window.innerHeight && sobreRect.bottom >= 0) {
+        topBtn.classList.add("in-sobre");
+      } else {
+        topBtn.classList.remove("in-sobre");
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

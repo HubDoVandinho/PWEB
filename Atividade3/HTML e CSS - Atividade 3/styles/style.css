@@ -1,0 +1,180 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #cfcfcf;
+}
+h1 {
+text-align: center;
+}
+
+.enquadro {
+  border-radius: 20px; 
+  margin: 10px 0;
+  font-size: larger;
+  padding: 15px;
+  background-color: rgb(245, 245, 245);
+ 
+
+}
+.enquadro-h1 {
+  border-radius: 20px; 
+  margin: 10px ;
+  font-size: 50px;
+  padding: -20px;
+ 
+  background-color: rgb(245, 245, 245);
+
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px 40px; 
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+
+.section-img {
+  width: 100%;       
+  height: auto;      
+  border-radius: 8px;
+  display: block;
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+
+#sobre {
+  background: black;
+  color: white;
+  padding: 60px 0;
+}
+
+
+.sobre-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+
+.sobre-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.sobre-card.autor-info .autor-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  object-fit: cover;
+  object-position: center top; 
+}
+
+.sobre-card.autor-info h3,
+.sobre-card.autor-info p {
+  margin: 5px 0;
+}
+
+
+.sobre-card.autor-logos .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  text-decoration: none; 
+  list-style: none;
+}
+
+
+.social-links img {
+  width: 90px;
+  transition: transform 0.2s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+
+.social-links::before,
+.social-links::after {
+  content: none;
+}
+
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1001;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#topBtn:hover {
+  opacity: 0.8;
+}
+
+
+#topBtn.in-sobre {
+  background-color: white;
+  color: black;
+}
