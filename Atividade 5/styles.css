@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.caixa {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: white;
+}
+
+#cor-nome {
+    font-size: 2em;
+    color: transparent;
+    position: relative;
+    text-align: center;
+}
+
+#cor-nome::before {
+    content: "Cinza";
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .caixa {
+        background-color: orange;
+    }
+
+    #cor-nome::before {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caixa {
+        background-color: pink;
+    }
+
+    #cor-nome::before {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .caixa {
+        background-color: red;
+    }
+
+    #cor-nome::before {
+        content: "Vermelho";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .caixa {
+        background-color: blue;
+    }
+
+    #cor-nome::before {
+        content: "Azul";
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .caixa {
+        background-color: yellow;
+    }
+
+    #cor-nome::before {
+        content: "Amarelo";
+        color: black;
+    }
+}
+
+@media (min-width: 1921px) {
+    .caixa {
+        background-color: green;
+    }
+
+    #cor-nome::before {
+        content: "Verde";
+    }
+}
