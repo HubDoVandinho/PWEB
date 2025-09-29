@@ -35,6 +35,16 @@ body {
     text-align: center;
 }
 
+@media (max-width: 420) {
+    .caixa {
+        background-color: gray;
+    }
+
+    #cor-nome::before {
+        content: "Cinza";
+    }
+}
+
 @media (min-width: 421px) and (max-width: 768px) {
     .caixa {
         background-color: orange;
@@ -95,3 +105,4 @@ body {
         content: "Verde";
     }
 }
+
