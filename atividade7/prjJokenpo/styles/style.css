@@ -1,0 +1,51 @@
+h1, h2{
+    text-align: center;
+}
+body {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding-top: 90px;
+}
+.container-box {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "a b c";
+}
+
+.a{
+    grid-area: a;
+
+
+}
+
+.b{
+    grid-area: b;
+ 
+
+}
+
+.c{
+    grid-area: c;
+
+
+}
+
+.box {
+    position: relativcenter;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: top;
+    height: 300px;
+    width: 300px;
+    justify-items: center;
+
+
+}
