@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculadora de área</h1>
+        <label for="altura">Altura</label>
+        <input type="text" id="altura">
+        <br>
+        <label for="largura">Largura</label>
+        <input type="text" id="largura">
+        <br>
+        <button id="btncalc">Calcular Área</button>
+
+        <div id="resultado" class="resultado-box"></div>
+
+    </div>
+    
+
+    <script>
+        function Retangulo(altura, largura) {
+            this.altura = altura;
+            this.largura = largura;
+            this.calcArea = function () {
+                return (this.altura * this.largura);
+            }
+        }
+
+        const botao = document.getElementById("btncalc");
+
+        botao.addEventListener("click", function () {
+            const altura = parseFloat(document.getElementById("altura").value);
+            const largura = parseFloat(document.getElementById("largura").value);
+
+            const retangulo = new Retangulo(altura, largura);
+
+            document.getElementById("resultado").innerText = retangulo.calcArea() + "M²";
+        })
+
+    </script>
+</body>
+
+</html>
