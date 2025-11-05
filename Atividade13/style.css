@@ -1,0 +1,15 @@
+ body {
+     text-align: center;
+     font-family: Arial, sans-serif;
+     margin-top: 50px;
+ }
+
+ img {
+     width: 300px;
+     cursor: pointer;
+     transition: transform 0.3s;
+ }
+
+ img:hover {
+     transform: scale(1.05);
+ }
