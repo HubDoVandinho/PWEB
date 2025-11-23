@@ -25,7 +25,7 @@ Perfil do Usuário Interativo
 - Visualização de Dados: Exibição elegante dos dados cadastrais vindos do Firestore.
 - Privacidade Financeira: Botão "Olho" para mostrar/esconder dados sensíveis do cartão de crédito.
 - Preferências: Sistema de tags onde o usuário adiciona ou remove preferências (ex: "Gosto de conversar", "Sem música") com persistência no banco de dados.
-- Sobre Mim: Campo de texto editável com salvamento automático (`onBlur`).
+- Sobre Mim: Campo de texto editável com salvamento automático.
 
 Mapa e Geolocalização
 - Mapa Interativo: Integração com OpenLayers para exibir o mapa.
