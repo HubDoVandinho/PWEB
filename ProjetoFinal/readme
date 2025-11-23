@@ -1,1 +1,55 @@
-Link do projeto hopedado: https://fatec-uniride.netlify.app/
+
+O UniRide será uma aplicação web progressiva (PWA) desenvolvida para facilitar a conexão entre estudantes universitários que precisam de carona e aqueles que podem oferecer.
+
+link de acesso: https://fatec-uniride.netlify.app/
+
+📱 Funcionalidades Principais
+
+Autenticação e Segurança
+- Login e Logout: Sistema seguro utilizando Firebase Authentication.
+- Recuperação de Senha: Fluxo completo com envio de e-mail e tela personalizada para redefinição.
+- Proteção de Rotas: Usuários não logados são redirecionados automaticamente para a tela de login.
+
+Cadastro Completo de Passageiro
+- Wizard de 2 Passos: Fluxo de cadastro dividido para melhor experiência.
+- Upload e Edição de Fotos: Integração com Cropper.js permitindo zoom e recorte da foto de perfil antes do envio.
+- Validação de Documentos: Upload de comprovante de matrícula para validação universitária.
+- Máscaras de Input:** Formatação automática para CPF, Telefone, Cartão de Crédito e Validade enquanto o usuário digita.
+
+Cadastro de Motorista (Opcional)
+- Upload de Documentação: Envio de CNH, Documento do Carro, Seguro e Selfie.
+- Armazenamento em Nuvem: Todas as imagens são otimizadas e hospedadas no Cloudinary.
+- Feedback Visual: Indicadores de progresso durante o upload dos arquivos.
+
+Perfil do Usuário Interativo
+- Visualização de Dados: Exibição elegante dos dados cadastrais vindos do Firestore.
+- Privacidade Financeira: Botão "Olho" para mostrar/esconder dados sensíveis do cartão de crédito.
+- Preferências: Sistema de tags onde o usuário adiciona ou remove preferências (ex: "Gosto de conversar", "Sem música") com persistência no banco de dados.
+- Sobre Mim: Campo de texto editável com salvamento automático (`onBlur`).
+
+Mapa e Geolocalização
+- Mapa Interativo: Integração com OpenLayers para exibir o mapa.
+- Geolocalização: Centraliza automaticamente na posição atual do usuário (GPS).
+- Busca de Endereços: Barra de pesquisa funcional integrada à API do LocationIQ para encontrar destinos.
+
+Tecnologias Utilizadas
+
+Front-end: HTML5, CSS3 (Responsivo), JavaScript (ES6 Modules).
+Back-end (BaaS): Firebase (Authentication & Firestore Database).
+Mídia/Storage: Cloudinary (Upload de imagens via API).
+Mapas: OpenLayers & LocationIQ API.
+
+Bibliotecas:
+
+Cropper.js (Edição de imagens).
+RemixIcon (Ícones vetoriais).
+
+☁️ Hospedagem (Deploy)
+
+O projeto está otimizado para ser hospedado em plataformas estáticas como Netlify
+
+📝 Licença
+
+Este projeto foi desenvolvido para fins educacionais. Sinta-se à vontade para usar como base para seus estudos.
+
+Desenvolvido com 💜 por Evandro Rodrigues, Matheus Portes, Pedro Isse e lauren Oliveira.
